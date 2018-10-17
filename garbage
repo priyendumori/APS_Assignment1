@@ -1,0 +1,60 @@
+root = insert(root, 50);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 30);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 20);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 40);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 70);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 10);
+    display(root,1,root);
+    cout<<endl<<endl;
+
+    root = insert(root, 5);
+    display(root, 1, root);
+    cout<<endl<<endl;
+
+    root = insert(root, 2);
+    display(root, 1, root);
+    cout<<endl<<endl;
+/*
+    root = insert(root, 45);
+    display(root, 1, root);
+    cout<<endl<<endl;
+
+    root = insert(root, 75);
+    display(root, 1, root);
+    cout<<endl<<endl;
+    
+    root = insert(root, 175);
+    display(root, 1, root);
+    cout<<endl<<endl;
+
+    root = insert(root, 2);
+    display(root, 1, root);
+    cout<<endl<<endl;
+
+    root = insert(root, 54);
+    display(root, 1, root);
+    cout<<endl<<endl;
+*/
+    
+    cout<<"l "<<leftChildren(root)<<endl;
+
+    cout<<"k "<< findKthMin(root, 3)->data <<endl;
+
+    root=deleteNode(root, findKthMin(root,3)->data);
+    display(root, 1, root);
+    cout<<endl<<endl;
